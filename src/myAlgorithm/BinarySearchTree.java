@@ -185,6 +185,29 @@ public class BinarySearchTree {
         System.out.println();
     }
 
+    /*
+    * 1. 直观打印二叉树
+    * 2. H数字H 代表头节点
+    * untodo
+    * */
+
+
+    /*
+    * 1. 二叉树的序列化和反序列化
+    * 2. ！ 表示一个数值的结束
+    * 3. #！ 表示一个节点为null
+    * 4. 先序遍历法
+    *
+    * */
+    public String serialByPre(TreeNode head){
+        if (head == null){
+            return "#!";
+        }
+        String res = head.value + "!";
+        res += serialByPre(head.left);
+        res += serialByPre(head.right);
+        return res;
+    }
 
         /*
         * 删除节点

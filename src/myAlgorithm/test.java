@@ -28,6 +28,8 @@ public class test {
             mysearch.preOrderUnRecur(testTreeNode);
             mysearch.inOrderUnRecur(testTreeNode);
             mysearch.posOrderUnRecur1(testTreeNode);
+
+            System.out.println(mysearch.serialByPre(testTreeNode));
         }catch (Exception e){
             e.printStackTrace();
         }
