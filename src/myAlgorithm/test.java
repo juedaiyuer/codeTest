@@ -21,10 +21,13 @@ public class test {
 //            System.out.println(mysearch.max());
 //            System.out.println(mysearch.min());
 //
-            mysearch.display(testTreeNode);
+//            mysearch.display(testTreeNode);
 
 //            System.out.println(mysearch.search(9));
 
+            mysearch.preOrderUnRecur(testTreeNode);
+            mysearch.inOrderUnRecur(testTreeNode);
+            mysearch.posOrderUnRecur1(testTreeNode);
         }catch (Exception e){
             e.printStackTrace();
         }

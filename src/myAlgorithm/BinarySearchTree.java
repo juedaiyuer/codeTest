@@ -1,5 +1,7 @@
 package myAlgorithm;
 
+import java.util.Stack;
+
 /**
  * Created by juedaiyuer on 16-9-28.
  */
@@ -95,11 +97,99 @@ public class BinarySearchTree {
     }
 
 
+    /*
+    * 1. 先序遍历，非递归方法
+    * 2. 栈实现功能
+    * 3. 右侧push
+    * 4. TreeNode head 可以修改为root
+    * */
+    public void preOrderUnRecur(TreeNode head){
+        System.out.println("非递归先序遍历二叉树");
+        if (head != null){
+            Stack<TreeNode> stack = new Stack<TreeNode>();
+            stack.add(head);
+            while (!stack.isEmpty()){
+                head = stack.pop();
+                System.out.print(head.value+",");
+
+                if (head.right != null){
+                    stack.push(head.right);
+                }
+
+                if (head.left != null){
+                    stack.push(head.left);
+                }
+
+            }
+        }
+        System.out.println();
+    }
+
+    /*
+    * 1. 中序遍历，非递归；左中右
+    * 2. 栈实现
+    *
+    * */
+    public void inOrderUnRecur(TreeNode head){
+        System.out.println("中序遍历非递归二叉树方法");
+        if (head != null){
+            Stack<TreeNode> stack = new Stack<TreeNode>();
+            while (!stack.isEmpty() || head != null){
+                if (head != null){
+                    stack.push(head);
+                    head = head.left;
+                }else {
+                    head = stack.pop();
+                    System.out.print(head.value + ",");
+                    head = head.right;
+                }
+            }
+        }
+        System.out.println();
+    }
+
+    /*
+    * 1. 后序遍历，非递归，比较麻烦
+    * 思想如下：
+    * 1. 申请一个栈，记为s1,然后将头节点head压入s1
+    * 2. 从s1中弹出的节点记为cur,然后依次将cur的左孩子和右孩子压入s1中
+    * 3. 在整个过程中，每一个从s1中弹出的节点都放进s2中
+    * 4. 不断重复步骤2和步骤3,直到s1为空
+    * 5. 从s2中依次弹出节点并打印，打印的顺序就是后序遍历的顺序
+    * */
+    public void posOrderUnRecur1(TreeNode head){
+        System.out.println("后序遍历非递归二叉树");
+        if(head != null){
+            Stack<TreeNode> s1 = new Stack<TreeNode>();
+            Stack<TreeNode> s2 = new Stack<TreeNode>();
+            s1.push(head);
+            while(!s1.isEmpty()){
+                head = s1.pop();
+                s2.push(head);
+
+                if (head.left != null){
+                    s1.push(head.left);
+                }
+
+                if(head.right != null){
+                    s1.push(head.right);
+                }
+
+            }
+
+            while (!s2.isEmpty()){
+                System.out.print(s2.pop().value+",");
+            }
+
+        }
+        System.out.println();
+    }
+
 
         /*
         * 删除节点
         * */
-    public TreeNode delete(int key){
+/*    public TreeNode delete(int key){
         TreeNode parent = root;
         TreeNode current = root;
         boolean isLeftChild = false;
@@ -152,5 +242,5 @@ public class BinarySearchTree {
         // 如果删除节点左右子节点都不为空
 
 
-    }
+    }*/
 }
