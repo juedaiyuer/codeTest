@@ -29,7 +29,12 @@ public class test {
             mysearch.inOrderUnRecur(testTreeNode);
             mysearch.posOrderUnRecur1(testTreeNode);
 
-            System.out.println(mysearch.serialByPre(testTreeNode));
+            System.out.println("-------------------------");
+            System.out.println("前序遍历序列化");
+            String str = mysearch.serialByPre(testTreeNode);
+            System.out.println(str);
+
+            System.out.println();
         }catch (Exception e){
             e.printStackTrace();
         }
