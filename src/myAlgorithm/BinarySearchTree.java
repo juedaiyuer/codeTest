@@ -1,5 +1,7 @@
 package myAlgorithm;
 
+import java.util.LinkedList;
+import java.util.Queue;
 import java.util.Stack;
 
 /**
@@ -193,7 +195,7 @@ public class BinarySearchTree {
 
 
     /*
-    * 1. 二叉树的序列化和反序列化
+    * 1. 二叉树的序列化
     * 2. ！ 表示一个数值的结束
     * 3. #！ 表示一个节点为null
     * 4. 先序遍历法
@@ -207,6 +209,32 @@ public class BinarySearchTree {
         res += serialByPre(head.left);
         res += serialByPre(head.right);
         return res;
+    }
+
+    /*
+    * 1. 二叉数的反序列化
+    * 2.
+    *
+    * */
+    public TreeNode reconByPreString(String preStr){
+        String[] values = preStr.split("!");
+        Queue<String> queue = new LinkedList<String>();
+        for (int i=0;i!=values.length;i++){
+            queue.offer(values[i]);
+        }
+        return reconPreOrder(queue);
+    }
+
+    public TreeNode reconPreOrder(Queue<String> queue){
+        String value = queue.poll();
+        if (value.equals("#")){
+            return null;
+        }
+
+        TreeNode head = new TreeNode(Integer.valueOf(value));
+        head.left = reconPreOrder(queue);
+        head.right = reconPreOrder(queue);
+        return head;
     }
 
         /*
