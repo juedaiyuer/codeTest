@@ -1,4 +1,4 @@
-package myAlgorithm;
+package myAlgorithm.binaryTree;
 
 /**
  * Created by juedaiyuer on 16-9-29.
@@ -33,6 +33,8 @@ public class test {
             System.out.println("前序遍历序列化");
             String str = mysearch.serialByPre(testTreeNode);
             System.out.println(str);
+            System.out.println("二叉树序列化和反序列化");
+
 
             System.out.println();
         }catch (Exception e){

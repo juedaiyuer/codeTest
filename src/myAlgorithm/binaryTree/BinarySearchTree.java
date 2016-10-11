@@ -1,4 +1,4 @@
-package myAlgorithm;
+package myAlgorithm.binaryTree;
 
 import java.util.LinkedList;
 import java.util.Queue;
@@ -213,18 +213,21 @@ public class BinarySearchTree {
 
     /*
     * 1. 二叉数的反序列化
-    * 2.
     *
     * */
     public TreeNode reconByPreString(String preStr){
         String[] values = preStr.split("!");
         Queue<String> queue = new LinkedList<String>();
+
         for (int i=0;i!=values.length;i++){
             queue.offer(values[i]);
         }
         return reconPreOrder(queue);
     }
-
+    /*
+    * 1. 递归方式
+    * 2. 步骤：内部循环完成，回到上一层，上一层循环完成，回到上上层...
+    * */
     public TreeNode reconPreOrder(Queue<String> queue){
         String value = queue.poll();
         if (value.equals("#")){

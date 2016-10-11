@@ -1,4 +1,4 @@
-package myAlgorithm;
+package myAlgorithm.binaryTree;
 
 
 
