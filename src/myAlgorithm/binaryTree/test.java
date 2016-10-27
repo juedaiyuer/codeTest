@@ -33,7 +33,10 @@ public class test {
             System.out.println("前序遍历序列化");
             String str = mysearch.serialByPre(testTreeNode);
             System.out.println(str);
-            System.out.println("二叉树序列化和反序列化");
+            System.out.println("----------反序列化-------");
+            TreeNode node = mysearch.reconByPreString(str);
+            BinarySearchTree test = new BinarySearchTree();
+            test.preOrderUnRecur(node);
 
 
             System.out.println();
