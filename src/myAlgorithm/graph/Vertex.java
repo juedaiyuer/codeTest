@@ -1,17 +1,19 @@
 package myAlgorithm.graph;
 
+import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.NoSuchElementException;
 
 /**
  * Created by juedaiyuer on 16-10-27.
  */
 public class Vertex<T> implements VertexInterface<T>,java.io.Serializable {
-    private T label; //标识标点，可以用不同类型来标识顶点，如String,Interger...
-    private List<Edge> edgeList; //到该顶点临接点的边，实际上java.util.LinkedList存储
-    private boolean visited; //标识顶点是否已访问
-    private VertexInterface<T> previousVertex; //该顶点的前驱顶点
-    private double cost; //顶点的权值，与边的权值要区分开
+    private T label;                             //标识标点，可以用不同类型来标识顶点，如String,Interger...
+    private List<Edge> edgeList;                 //到该顶点临接点的边，实际上java.util.LinkedList存储
+    private boolean visited;                     //标识顶点是否已访问
+    private VertexInterface<T> previousVertex;   //该顶点的前驱顶点
+    private double cost;                         //顶点的权值，与边的权值要区分开
 
     public Vertex(T vertexLabel){
         label = vertexLabel;
@@ -26,4 +28,72 @@ public class Vertex<T> implements VertexInterface<T>,java.io.Serializable {
     * 1. Edge类封装了一个顶点和一个double类型变量
     * 2. 若不需要考虑权值，可以不需要单独创建一个Edge类来表示边，只需要一个保存顶点的列表即可
     * */
+    protected class Edge implements java.io.Serializable{
+        private VertexInterface<T>  vertex;   //终点
+        private double weight;                //权值
+
+        //Vertex类本身就代表顶点对象，因此在这里只需提供endVertex，就可以表示一条边
+        protected Edge(VertexInterface<T> endVertex , double edgeWeight){
+            vertex = endVertex;
+            weight = edgeWeight;
+        }
+
+        protected VertexInterface<T> getEndVertex(){
+            return vertex;
+        }
+
+        protected double getWeight(){
+            return weight;
+        }
+    }
+
+    /*
+    * Task:遍历该顶点临接点的迭代器---为getNeighborInterator（）方法 提供迭代器
+    * 1. 由于顶点的临接点以边的形式存储在java.util.List中，因此借助List的迭代器来实现
+    * 2. 由于顶点的临接点由Edge类封装起来---见Edge.java的定义的第一个属性
+    * 因此，首先获得遍历Edge对象的迭代器，再根据获得的Edge对象解析出临接点对象
+    * */
+    private class NeighborIterator implements Iterator<VertexInterface<T>>{
+        Iterator<Edge> edgesIterator;
+        private NeighborIterator(){
+            edgesIterator = edgeList.iterator(); //获取LinkedList的迭代器
+        }
+
+        @Override
+        public boolean hasNext(){
+            return edgesIterator.hasNext();
+        }
+
+        @Override
+        public VertexInterface<T> next(){
+            VertexInterface<T> nextNeighbor = null;
+            if (edgesIterator.hasNext()){
+                Edge edgeToNextNeighbor = edgesIterator.next(); //LinkedList中存储的是Edge
+                nextNeighbor = edgeToNextNeighbor.getEndVertex(); //从Edge对象中取出顶点
+            }
+            else {
+
+                throw new NoSuchElementException();
+            }
+            return nextNeighbor;
+        }
+
+        @Override
+        public void remove() {
+            throw new UnsupportedOperationException();
+        }
+    }
+
+    /*
+    * Task:生成一个遍历该顶点所有临接边的权值的迭代器
+    * 权值是Edge类的属性，因此先获得一个遍历Edge对象的迭代器，取得Edge对象在获取权值
+    * */
+    private class WeightIterator implements Iterator{
+        private Iterator<Edge> edgesIterator;
+        private WeightIterator(){
+            edgesIterator = edgeList.iterator();
+        }
+
+
+    }
 }
