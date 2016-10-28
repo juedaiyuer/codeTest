@@ -6,6 +6,9 @@ import java.util.List;
 import java.util.NoSuchElementException;
 
 /**
+ * 说明：图的顶点定义 Vertex
+ *
+ *
  * Created by juedaiyuer on 16-10-27.
  */
 public class Vertex<T> implements VertexInterface<T>,java.io.Serializable {
@@ -94,6 +97,150 @@ public class Vertex<T> implements VertexInterface<T>,java.io.Serializable {
             edgesIterator = edgeList.iterator();
         }
 
+        @Override
+        public boolean hasNext() {
+            return edgesIterator.hasNext();
+        }
 
+        @Override
+        public Object next() {
+            Double result;
+            if (edgesIterator.hasNext()){
+                Edge edge = edgesIterator.next();
+                result = edge.getWeight();
+            }
+            else
+                throw new NoSuchElementException();
+            return (Object)result;
+        }
+
+        @Override
+        public void remove() {
+            throw new UnsupportedOperationException();
+        }
+
+    }
+
+    @Override
+    public T getLabel() {
+        return label;
+    }
+
+    @Override
+    public void visit() {
+        this.visited = true;
+    }
+
+    @Override
+    public void unVisit() {
+        this.visited = false;
+    }
+
+    @Override
+    public boolean isVisited() {
+        return visited;
+    }
+
+    @Override
+    public boolean connect(VertexInterface<T> endVertex, double edgeWeight) {
+
+        // 将“边”（实质顶点）插入顶点的临接表
+        boolean result = false;
+        // 顶点互不相同
+        if(!this.equals(endVertex)){
+            Iterator<VertexInterface<T>> neighbors = this.getNeighborInterator();
+            boolean duplicateEdge = false;
+
+            //保证不添加重复的边
+            while (!duplicateEdge && neighbors.hasNext()){
+                VertexInterface<T> nextNeighbor = neighbors.next();
+                if (endVertex.equals(nextNeighbor)){
+                    duplicateEdge = true;
+                    break;
+                }
+                if(!duplicateEdge){
+                    edgeList.add(new Edge(endVertex,edgeWeight));//添加一条新边
+                    result = true;
+                }
+            }
+        }
+
+        return result;
+    }
+
+
+    @Override
+    public boolean connect(VertexInterface<T> endVertex) {
+        return connect(endVertex,0);
+    }
+
+    @Override
+    public Iterator<VertexInterface<T>> getNeighborInterator() {
+        return new NeighborIterator();
+    }
+
+    @Override
+    public Iterator getWeightIterator() {
+        return new WeightIterator();
+    }
+
+    @Override
+    public boolean hasNeighbor() {
+        return !(edgeList.isEmpty()); //临接点实质是存储在List
+    }
+
+    @Override
+    public VertexInterface<T> getUnvisitedNeighbor() {
+        VertexInterface<T> result = null;
+        Iterator<VertexInterface<T>> neighbors = getNeighborInterator();
+        // 获取该顶点的第一个未被访问的临接点
+        while (neighbors.hasNext() && result == null){
+            VertexInterface<T> nextNeighbor = neighbors.next();
+            if (!nextNeighbor.isVisited()){
+                result = nextNeighbor;
+            }
+        }
+        return result;
+    }
+
+    @Override
+    public void setPredecessor(VertexInterface<T> predecessor) {
+        this.previousVertex = predecessor;
+    }
+
+    @Override
+    public VertexInterface<T> getPredecessor() {
+        return this.previousVertex;
+    }
+
+    @Override
+    public boolean hasPredecessor() {
+        return this.previousVertex != null;
+    }
+
+    @Override
+    public void setCost(double newCost) {
+        cost = newCost;
+    }
+
+    @Override
+    public double getCost() {
+        return cost;
+    }
+
+    // 判断两个顶点是否相同
+    public boolean equals(Object other){
+        boolean result;
+        if (other == null || (getClass() != other.getClass())) {
+            result = false;
+        }
+
+        else
+        {
+            Vertex<T> otherVertex = (Vertex<T>)other;
+            result = label.equals(otherVertex.label); ////节点是否相同最终还是由标识 节点类型的类的equals() 决定
+
+        }
+        return result;
     }
 }
