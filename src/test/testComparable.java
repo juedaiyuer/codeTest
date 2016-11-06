@@ -14,6 +14,6 @@ public class testComparable {
 
 }
 
-public class Student implements Comparable{
+/*public class Student implements Comparable{
 
-}
+}*/

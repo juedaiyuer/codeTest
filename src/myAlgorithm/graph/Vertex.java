@@ -144,7 +144,7 @@ public class Vertex<T> implements VertexInterface<T>,java.io.Serializable {
     @Override
     public boolean connect(VertexInterface<T> endVertex, double edgeWeight) {
 
-        // 将“边”（实质顶点）插入顶点的临接表
+        // 将“边”（实质是顶点）插入顶点的临接表
         boolean result = false;
         // 顶点互不相同
         if(!this.equals(endVertex)){
