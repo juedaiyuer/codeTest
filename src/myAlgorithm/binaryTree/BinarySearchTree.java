@@ -240,6 +240,65 @@ public class BinarySearchTree {
         return head;
     }
 
+    /*
+    *  Task: Morris中序遍历
+    *
+    *  时间复杂度为O（n）, 额外空间复杂度为O（1）
+    *
+    *  @param head 二叉树的根节点
+    *
+    *  步骤：
+    *  1. 假设当前子树的头节点为h,让h的左子树中的最右节点的right指针指向h
+    *  2. h的左子树继续步骤1，直到遇到某一个节点没有左子树时记为node---代码中为cur2
+    *
+    *  从node开始通过每一个节点的right指针进行移动，并依次打印
+    *
+    *  3. 假设移动到的节点定义为cur,cur节点的左子树最右节点是否指向cur---此时的cur为之前操作过的cur2
+    *  4. 如果是，让cur节点的左子树中最右节点的right指针指向空，将步骤1逐渐调整过来；打印cur
+    *  5. cur的right指针移动到下一个节点，重复步骤4
+    *  6. 如果不是，以cur为头的子树重回步骤1执行
+    *
+    *
+    * */
+    public void morrisIn(TreeNode head){
+        if (head == null){
+            return ;
+        }
+
+        TreeNode cur1 = head;   // 当前树
+        TreeNode cur2 = null;   // cur2工具型节点
+
+        while (cur1 != null){
+            cur2 = cur1.left;   // cur2 当前树的左子树
+            if (cur2 != null){
+
+                // 左子树最右节点
+                while (cur2.right !=null && cur2.right != cur1 ){
+                    cur2 = cur2.right;
+                }
+
+                // 最右节点为空
+                if (cur2.right == null){
+                    cur2.right = cur1;  // 指向当前树的头节点
+                    cur1 = cur1.left;   // 当前树的左子树继续循环
+                    continue;           // 中断本次循环,直接进入while下一个循环
+
+                } else {
+                    cur2.right = null;  // 步骤5
+                }
+            }
+
+            System.out.print(cur1.value +" ");
+            cur1 = cur1.right;
+        }
+
+        System.out.println();
+    }
+
+
+
+
+
         /*
         * 删除节点
         * */
