@@ -21,7 +21,6 @@ public interface VertexInterface<T> {
     /*
     * Task:用一条加权边连接该顶点与指定顶点
     *
-    * @return 若插入成功，返回true
     * */
     public boolean connect(VertexInterface<T> endVertex, double edgeWeight);
 

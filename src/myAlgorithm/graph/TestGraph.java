@@ -23,6 +23,8 @@ public class TestGraph {
 		 *   <A,D>  <A,C>  <A,B>  <D,C>  <C,E>
 		 */
         System.out.println("adding edges...");
+        // 代码这里出现了问题
+
         graph.addEdge("A","D");
         graph.addEdge("A","C");
         graph.addEdge("A","B");

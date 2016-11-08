@@ -40,6 +40,8 @@ public class test {
 
 
             System.out.println();
+            System.out.println("---------Morris中序遍历---------");
+            mysearch.morrisIn(testTreeNode);
         }catch (Exception e){
             e.printStackTrace();
         }

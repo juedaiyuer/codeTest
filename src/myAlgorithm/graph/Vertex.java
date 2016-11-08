@@ -152,19 +152,18 @@ public class Vertex<T> implements VertexInterface<T>,java.io.Serializable {
             boolean duplicateEdge = false;
 
             //保证不添加重复的边
-            while (!duplicateEdge && neighbors.hasNext()){
+            while (!duplicateEdge && neighbors.hasNext()) {
                 VertexInterface<T> nextNeighbor = neighbors.next();
-                if (endVertex.equals(nextNeighbor)){
+                if (endVertex.equals(nextNeighbor)) {
                     duplicateEdge = true;
                     break;
                 }
-                if(!duplicateEdge){
-                    edgeList.add(new Edge(endVertex,edgeWeight));//添加一条新边
-                    result = true;
-                }
+            }
+            if(!duplicateEdge){
+                edgeList.add(new Edge(endVertex,edgeWeight));//添加一条新边
+                result = true;
             }
         }
-
         return result;
     }
 
