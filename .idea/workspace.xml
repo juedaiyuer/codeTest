@@ -1,23 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c12c3bbc-5f6a-4baf-85c1-069f4f745959" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/myAlgorithm/graphSimple/GraphTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/myAlgorithm/graphSimple/breathFirstSearch.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/myTest/myAlgorithm/binaryTree/BinarySearchTree.class" afterPath="$PROJECT_DIR$/out/production/myTest/myAlgorithm/binaryTree/BinarySearchTree.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/myTest/myAlgorithm/binaryTree/test.class" afterPath="$PROJECT_DIR$/out/production/myTest/myAlgorithm/binaryTree/test.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/myTest/myAlgorithm/graph/DirectedGraph.class" afterPath="$PROJECT_DIR$/out/production/myTest/myAlgorithm/graph/DirectedGraph.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/myTest/myAlgorithm/graph/TestGraph.class" afterPath="$PROJECT_DIR$/out/production/myTest/myAlgorithm/graph/TestGraph.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/myTest/myAlgorithm/graph/Vertex.class" afterPath="$PROJECT_DIR$/out/production/myTest/myAlgorithm/graph/Vertex.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/myTest/myAlgorithm/graphSimple/Queue.class" afterPath="$PROJECT_DIR$/out/production/myTest/myAlgorithm/graphSimple/Queue.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/myAlgorithm/binaryTree/test.java" afterPath="$PROJECT_DIR$/src/myAlgorithm/binaryTree/test.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/myAlgorithm/graph/DirectedGraph.java" afterPath="$PROJECT_DIR$/src/myAlgorithm/graph/DirectedGraph.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/myAlgorithm/graph/TestGraph.java" afterPath="$PROJECT_DIR$/src/myAlgorithm/graph/TestGraph.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/myAlgorithm/graph/Vertex.java" afterPath="$PROJECT_DIR$/src/myAlgorithm/graph/Vertex.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/myAlgorithm/graph/VertexInterface.java" afterPath="$PROJECT_DIR$/src/myAlgorithm/graph/VertexInterface.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/myAlgorithm/graphSimple/Queue.java" afterPath="$PROJECT_DIR$/src/myAlgorithm/graphSimple/Queue.java" />
-    </list>
+    <list default="true" id="c12c3bbc-5f6a-4baf-85c1-069f4f745959" name="Default" comment="" />
     <list id="c2c2c418-a088-4072-9516-09247093bb97" name="Rejected commit: Default" comment="BST" />
     <ignored path="myTest.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -58,8 +42,8 @@
       <file leaf-file-name="BinarySearchTree.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/myAlgorithm/binaryTree/BinarySearchTree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="241" column="0" selection-start-line="241" selection-start-column="0" selection-end-line="241" selection-end-column="0" />
+            <state relative-caret-position="132">
+              <caret line="246" column="5" selection-start-line="246" selection-start-column="5" selection-end-line="246" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -874,7 +858,7 @@
       <workItem from="1478522185139" duration="2742000" />
       <workItem from="1478567689294" duration="375000" />
       <workItem from="1478568108100" duration="3140000" />
-      <workItem from="1478608340144" duration="6658000" />
+      <workItem from="1478608340144" duration="6716000" />
     </task>
     <task id="LOCAL-00001" summary="BST">
       <created>1476099444426</created>
@@ -897,15 +881,22 @@
       <option name="project" value="LOCAL" />
       <updated>1478616071906</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="java">
+      <created>1478616213416</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1478616213416</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="91878000" />
+    <option name="totallyTimeSpent" value="91936000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1301" height="772" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -916,7 +907,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27503738" sideWeight="0.49577248" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2825112" sideWeight="0.49500385" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2825112" sideWeight="0.49500385" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2667179" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
@@ -1195,6 +1186,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
           <caret line="8" column="46" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1311,8 +1303,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/myAlgorithm/binaryTree/BinarySearchTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="241" column="0" selection-start-line="241" selection-start-column="0" selection-end-line="241" selection-end-column="0" />
+        <state relative-caret-position="132">
+          <caret line="246" column="5" selection-start-line="246" selection-start-column="5" selection-end-line="246" selection-end-column="5" />
           <folding />
         </state>
       </provider>
