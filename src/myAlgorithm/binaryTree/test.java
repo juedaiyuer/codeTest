@@ -42,6 +42,10 @@ public class test {
             System.out.println();
             System.out.println("---------Morris中序遍历---------");
             mysearch.morrisIn(testTreeNode);
+
+            System.out.println("---------判断二叉树是否为平衡二叉树---------");
+            mysearch.isBalance(testTreeNode);
+
         }catch (Exception e){
             e.printStackTrace();
         }

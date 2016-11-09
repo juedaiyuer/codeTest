@@ -295,7 +295,50 @@ public class BinarySearchTree {
         System.out.println();
     }
 
+    /*
+    * Task:判断二叉树是否为平衡二叉树
+    *
+    * 时间复杂度为O（n）
+    *
+    * 平衡二叉树的性质：要么是一颗空树，要么任何一个节点的左右子树高度差的绝对值不超过1
+    *
+    * @param head 二叉树的根节点
+    *
+    * */
+    public boolean isBalance(TreeNode head){
+        boolean[] res = new boolean[1];
+        res[0] = true;
+        getHeight(head,1,res);
+        return res[0];
+    }
 
+    /*
+    *  递归方式获取二叉树的高度
+    *
+    *  @param head 二叉树的根节点
+    *  @param level 二叉树的高度h---记录二叉树的高度，依次递增
+    *
+    * */
+    public int getHeight(TreeNode head,int level,boolean[] res){
+        if (head == null){
+            return level;
+        }
+
+        int lH = getHeight(head.left,level+1,res);
+        if (!res[0]) {
+            return level;
+        }
+        int rH = getHeight(head.right,level+1,res);
+        if (!res[0]) {
+            return level;
+        }
+        if (Math.abs(lH - rH) > 1) {
+            res[0] = false;
+        }
+
+        return Math.max(lH,rH);
+
+    }
 
 
 
