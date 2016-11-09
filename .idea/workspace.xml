@@ -33,8 +33,8 @@
           </provider>
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="142">
-                <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+              <first_editor relative-caret-position="198">
+                <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -865,7 +865,7 @@
       <workItem from="1478568108100" duration="3140000" />
       <workItem from="1478608340144" duration="7227000" />
       <workItem from="1478654342685" duration="7033000" />
-      <workItem from="1478696296173" duration="4913000" />
+      <workItem from="1478696296173" duration="5078000" />
     </task>
     <task id="LOCAL-00001" summary="BST">
       <created>1476099444426</created>
@@ -937,11 +937,18 @@
       <option name="project" value="LOCAL" />
       <updated>1478702647145</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="java">
+      <created>1478703102739</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1478703102739</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="104393000" />
+    <option name="totallyTimeSpent" value="104558000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1301" height="744" extended-state="6" />
@@ -1308,8 +1315,8 @@
       </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="142">
-            <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+          <first_editor relative-caret-position="198">
+            <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
             <folding />
           </first_editor>
           <second_editor />
