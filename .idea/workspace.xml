@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c12c3bbc-5f6a-4baf-85c1-069f4f745959" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/myTest/myAlgorithm/binaryTree/BinarySearchTree.class" afterPath="$PROJECT_DIR$/out/production/myTest/myAlgorithm/binaryTree/BinarySearchTree.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/myTest/myAlgorithm/README.md" afterPath="$PROJECT_DIR$/out/production/myTest/myAlgorithm/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/myAlgorithm/README.md" afterPath="$PROJECT_DIR$/src/myAlgorithm/README.md" />
     </list>
     <list id="c2c2c418-a088-4072-9516-09247093bb97" name="Rejected commit: Default" comment="BST" />
     <ignored path="myTest.iws" />
@@ -27,15 +26,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/myAlgorithm/README.md">
           <provider editor-type-id="MarkdownFxPreviewEditor">
             <state />
           </provider>
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="120">
-                <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+              <first_editor relative-caret-position="142">
+                <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -43,11 +42,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="myArray.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="myArray.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/myAlgorithm/array/myArray.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="792">
-              <caret line="77" column="67" selection-start-line="77" selection-start-column="67" selection-end-line="77" selection-end-column="67" />
+            <state relative-caret-position="88">
+              <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
               <folding>
                 <element signature="method#getMaxLength#0;class#myArray#0" expanded="false" />
                 <element signature="e#1834#1851#0" expanded="true" />
@@ -118,9 +117,9 @@
         <option value="$PROJECT_DIR$/src/myAlgorithm/graph/Vertex.java" />
         <option value="$PROJECT_DIR$/src/myAlgorithm/binaryTree/test.java" />
         <option value="$PROJECT_DIR$/src/myAlgorithm/binaryTree/BinarySearchTree.java" />
-        <option value="$PROJECT_DIR$/src/myAlgorithm/README.md" />
         <option value="$PROJECT_DIR$/src/myAlgorithm/array/testmyArray.java" />
         <option value="$PROJECT_DIR$/src/myAlgorithm/array/myArray.java" />
+        <option value="$PROJECT_DIR$/src/myAlgorithm/README.md" />
       </list>
     </option>
   </component>
@@ -866,7 +865,7 @@
       <workItem from="1478568108100" duration="3140000" />
       <workItem from="1478608340144" duration="7227000" />
       <workItem from="1478654342685" duration="7033000" />
-      <workItem from="1478696296173" duration="4459000" />
+      <workItem from="1478696296173" duration="4913000" />
     </task>
     <task id="LOCAL-00001" summary="BST">
       <created>1476099444426</created>
@@ -931,11 +930,18 @@
       <option name="project" value="LOCAL" />
       <updated>1478702634541</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="java">
+      <created>1478702647145</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1478702647145</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="103939000" />
+    <option name="totallyTimeSpent" value="104393000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1301" height="744" extended-state="6" />
@@ -1285,14 +1291,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/myAlgorithm/array/myArray.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+          <folding>
+            <element signature="method#getMaxLength#0;class#myArray#0" expanded="false" />
+            <element signature="e#1834#1851#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/myAlgorithm/README.md">
       <provider editor-type-id="MarkdownFxPreviewEditor">
         <state />
       </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="120">
-            <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+          <first_editor relative-caret-position="142">
+            <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
             <folding />
           </first_editor>
           <second_editor />
@@ -1302,17 +1319,6 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/myAlgorithm/array/myArray.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="792">
-          <caret line="77" column="67" selection-start-line="77" selection-start-column="67" selection-end-line="77" selection-end-column="67" />
-          <folding>
-            <element signature="method#getMaxLength#0;class#myArray#0" expanded="false" />
-            <element signature="e#1834#1851#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
