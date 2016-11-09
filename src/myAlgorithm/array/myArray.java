@@ -1,5 +1,7 @@
 package myAlgorithm.array;
 
+import java.util.HashMap;
+
 /**
  * Created by juedaiyuer on 16-11-9.
  */
@@ -53,4 +55,41 @@ public class myArray {
         }
         return len;
     }
+
+    /*
+    * Task:未排序数组中累加和为给定值的最长子数组系列问题
+    *
+    * 时间复杂度:O[n] 额外空间复杂度：O[n]
+    *
+    * s[i]代表着子数组arr[0...i]所有元素的累加和，arr[j...i]的累加和为s[i]-s[j]
+    *
+    * sum代表着从0位置到i位置所有元素的累加和
+    *
+    * 哈希表map key代表出现过的累加值，value 表示最早出现的位置
+    *
+    *
+    * */
+    public int maxLength(int[] arr,int k){
+        if (arr == null || arr.length == 0){
+            return 0;
+        }
+
+        HashMap<Integer,Integer> map = new HashMap<Integer,Integer>();
+        map.put(0,-1);  //计算len用到，arr[i] i-map.get(sum-k) = i+1就是长度
+        int len = 0;
+        int sum = 0;
+        for (int i=0;i<arr.length;i++){
+            sum +=arr[i];
+            if (map.containsKey(sum-k)){
+                len = Math.max(i-map.get(sum-k),len);
+            }
+
+            if (!map.containsKey(sum)){
+                map.put(sum,i);
+            }
+        }
+        return len;
+    }
+
+
 }
