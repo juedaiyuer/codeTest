@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c12c3bbc-5f6a-4baf-85c1-069f4f745959" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/myAlgorithm/array/testmyArray.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/myTest/myAlgorithm/binaryTree/BinarySearchTree.class" afterPath="$PROJECT_DIR$/out/production/myTest/myAlgorithm/binaryTree/BinarySearchTree.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/myTest/myAlgorithm/README.md" afterPath="$PROJECT_DIR$/out/production/myTest/myAlgorithm/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/myAlgorithm/array/myArray.java" afterPath="$PROJECT_DIR$/src/myAlgorithm/array/myArray.java" />
     </list>
     <list id="c2c2c418-a088-4072-9516-09247093bb97" name="Rejected commit: Default" comment="BST" />
     <ignored path="myTest.iws" />
@@ -868,7 +866,7 @@
       <workItem from="1478568108100" duration="3140000" />
       <workItem from="1478608340144" duration="7227000" />
       <workItem from="1478654342685" duration="7033000" />
-      <workItem from="1478696296173" duration="4419000" />
+      <workItem from="1478696296173" duration="4442000" />
     </task>
     <task id="LOCAL-00001" summary="BST">
       <created>1476099444426</created>
@@ -919,11 +917,18 @@
       <option name="project" value="LOCAL" />
       <updated>1478663034955</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="java">
+      <created>1478702618290</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1478702618291</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="103899000" />
+    <option name="totallyTimeSpent" value="103922000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1301" height="744" extended-state="6" />
